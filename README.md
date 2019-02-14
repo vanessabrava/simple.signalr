@@ -1,17 +1,12 @@
 ## Latest Version of Common Tags
 The following tags are the latest stable versions of the most commonly used images. The complete set of tags is listed further down.
-* [`latest`](https://hub.docker.com/r/vanebranve/simple.signalr)
+* [`latest`](https://github.com/vanessabrava/simple.signalr)
 
 SignalR in .NET Core is simple to build and easy to use, but using Docker containers to quickly load a socket is even better!
 
 ## Container sample: Run a simple application
 
 Here's a simple example with some optionals to load the SignalR server application in Docker.
-
-* `-d`  to start the container in the background;
-* `-p 5001:80` to choose a port other than the default, by redirecting port 80 to a port of your choice. I chose 5001, to the left is the new port and to the right is the container's default port. ;
-* `--name signalr-server` to easily locate your container using a friendly name;
-* `--restart=always` to automatically start the container if you restart Docker.
 
 Pull image;
 ```shell
@@ -22,6 +17,11 @@ Start the container;
 ```shell
 $ docker run -d -p 5001:80 --name signalr-server --restart=always vanebranve/simple.signalr
 ```
+### Explanation
+* `-d`  to start the container in the background;
+* `-p 5001:80` to choose a port other than the default, by redirecting port 80 to a port of your choice. I chose 5001, to the left is the new port and to the right is the container's default port. ;
+* `--name signalr-server` to easily locate your container using a friendly name;
+* `--restart=always` to automatically start the container if you restart Docker.
 
 Check if the container is up!
 ```shell
