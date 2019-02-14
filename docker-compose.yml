@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  simple.signalr.socket:
+    image: simple.signalr
+    build:
+      context: .
+      dockerfile: Simple.SignalR.Socket/Dockerfile

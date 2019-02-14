@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.SignalR.Socket", "Simple.SignalR.Socket\Simple.SignalR.Socket.csproj", "{7BFEA813-A36E-4910-A721-CFCA418DCBA6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4AB18F6E-3981-4EA1-9FF2-5D68E17960A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Service SignalR", "1. Service SignalR", "{B38012DD-27C3-495E-B7E0-427808E4919A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Host Layer", "1. Host Layer", "{964CDF5A-08F8-4EA7-B90D-EA02D2C83BA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Infrastructure Layer", "2. Infrastructure Layer", "{D06643C9-B02A-4BAC-B896-DAFF34638CAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Cross Cutting", "1. Cross Cutting", "{F65F7EB8-DA09-400F-A90F-46EB7B58F7DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Docker Support", "2. Docker Support", "{FA0BE07E-694C-4B17-A8B6-51CD3991A2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.SignalR.CrossCutting.Constants", "Simple.SignalR.CrossCutting.Constants\Simple.SignalR.CrossCutting.Constants.csproj", "{91C2A61B-5279-4EE0-9BFC-29DAC052DEE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BFEA813-A36E-4910-A721-CFCA418DCBA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFEA813-A36E-4910-A721-CFCA418DCBA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFEA813-A36E-4910-A721-CFCA418DCBA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFEA813-A36E-4910-A721-CFCA418DCBA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB18F6E-3981-4EA1-9FF2-5D68E17960A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB18F6E-3981-4EA1-9FF2-5D68E17960A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB18F6E-3981-4EA1-9FF2-5D68E17960A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB18F6E-3981-4EA1-9FF2-5D68E17960A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C2A61B-5279-4EE0-9BFC-29DAC052DEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C2A61B-5279-4EE0-9BFC-29DAC052DEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C2A61B-5279-4EE0-9BFC-29DAC052DEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C2A61B-5279-4EE0-9BFC-29DAC052DEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BFEA813-A36E-4910-A721-CFCA418DCBA6} = {964CDF5A-08F8-4EA7-B90D-EA02D2C83BA4}
+		{4AB18F6E-3981-4EA1-9FF2-5D68E17960A8} = {FA0BE07E-694C-4B17-A8B6-51CD3991A2D2}
+		{964CDF5A-08F8-4EA7-B90D-EA02D2C83BA4} = {B38012DD-27C3-495E-B7E0-427808E4919A}
+		{D06643C9-B02A-4BAC-B896-DAFF34638CAF} = {B38012DD-27C3-495E-B7E0-427808E4919A}
+		{F65F7EB8-DA09-400F-A90F-46EB7B58F7DD} = {D06643C9-B02A-4BAC-B896-DAFF34638CAF}
+		{91C2A61B-5279-4EE0-9BFC-29DAC052DEE4} = {F65F7EB8-DA09-400F-A90F-46EB7B58F7DD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {635E99E9-DF81-4E58-B415-82342005535C}
+	EndGlobalSection
+EndGlobal

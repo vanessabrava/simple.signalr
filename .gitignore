@@ -3,3 +3,9 @@
 ################################################################################
 
 /Simple.SignalR.Socket/obj
+/Simple.SignalR.Socket/bin/Debug/netcoreapp2.1
+/obj
+/bin/Debug
+/.vs
+/Simple.SignalR.CrossCutting.Constants/obj
+/Simple.SignalR.CrossCutting.Constants/bin/Debug/netstandard2.0
