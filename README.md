@@ -1,6 +1,6 @@
 ## Latest Version of Common Tags
 The following tags are the latest stable versions of the most commonly used images. The complete set of tags is listed further down.
-* [`latest`](https://github.com/vanessabrava/simple.signalr)
+* [`latest`](https://hub.docker.com/r/vanebranve/simple.signalr)
 
 SignalR in .NET Core is simple to build and easy to use, but using Docker containers to quickly load a socket is even better!
 
@@ -13,21 +13,22 @@ Here's a simple example with some optionals to load the SignalR server applicati
 * `--name signalr-server` to easily locate your container using a friendly name;
 * `--restart=always` to automatically start the container if you restart Docker.
 
+Pull image;
+```shell
+$ docker pull vanebranve/simple.signalr
+```
+
 Start the container;
 ```shell
 $ docker run -d -p 5001:80 --name signalr-server --restart=always vanebranve/simple.signalr
 ```
-Output similar to this:
-```
-8c4ca45aa47d4e2ff35e14dedcb6e00a24510ef60051620974ac8822325ff14d
-```
 
 Check if the container is up!
-```powershell
+```shell
 $ docker ps
 ```
 
-Output should be this:
+Output similar to this:
 ```text
 CONTAINER ID    IMAGE                        COMMAND                   CREATED          STATUS          PORTS                   NAMES
 8c4ca45aa47d    vanebranve/simple.signalr    "dotnet Simple.Signa…"    4 minutes ago    Up 4 minutes    0.0.0.0:5001->80/tcp    signalr-server
